@@ -8,5 +8,11 @@ defmodule Sequence.Server do
   def handle_call({:set_number, new_number}, _from, _current_number) do
     {:reply, new_number, new_number}
   end
+
+  def handle_call({:factors, number}, _, _) do
+    {:reply, {:factors_of, number, factors(number)}, []}
+  end
+
+  def factors(number), do: number + 1
 end
 
