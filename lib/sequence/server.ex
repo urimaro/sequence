@@ -14,5 +14,9 @@ defmodule Sequence.Server do
   end
 
   def factors(number), do: number + 1
+
+  def handle_cast({:increment_number, delta}, current_number) do
+    {:noreply, current_number + delta}
+  end
 end
 
