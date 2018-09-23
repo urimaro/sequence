@@ -1,6 +1,8 @@
 # Sequence
 
-**TODO: Add description**
+This project is for the Programming Elixir 1.2.
+
+- Ch.16 OTP: Servers
 
 ## Installation
 
